@@ -4,7 +4,7 @@
   "author": "Luca Zampetti <lzampetti@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "postinstall": "npm run start",
+    "postinstall": "if [ \"$CI\" != \"true\" ]; then npm run start; fi",
     "start": "sirv --port 8080 --host --cors --single --dev"
   },
   "dependencies": {

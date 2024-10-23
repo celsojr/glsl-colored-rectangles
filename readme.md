@@ -151,11 +151,15 @@ Ensure that you have an HTML file that initializes WebGL and links the shader co
 ```sh
 .
 ├── shaders
-│    └── fragment.glsl # GLSL fragment shader for rendering the Microsoft logo
+│    ├── circle.glsl
+│    ├── common.glsl
+│    ├── fragment.glsl
+│    ├── microsoftLogo.glsl # Microsoft logo GLSL fragment shader
+│    └── square.glsl
 ├── readme.md # This document
 ├── .vscode
-│   ├── extensions.json # Recommended extension used in this project (@recommended)
-
+│   └── extensions.json # Recommended extension used in this project (@recommended)
+│
 # All things glsl-canvas bellow except the screenshot
 ├── index.html # HTML file to initialize WebGL and host the shader
 ├── css
@@ -175,8 +179,7 @@ Ensure that you have an HTML file that initializes WebGL and links the shader co
 ├── package.json # Project metadata and npm scripts
 ├── LICENSE
 
-
-6 directories, 16 files
+6 directories, 20 files
 ```
 
 ### 7. Script Breakdown:
